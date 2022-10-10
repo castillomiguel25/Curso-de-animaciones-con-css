@@ -1,0 +1,12 @@
+body {
+    counter-reset: game;
+}
+
+input:checked {
+    counter-increment: game;
+}
+
+
+.Total-count::after {
+    content: counter(game);
+}
